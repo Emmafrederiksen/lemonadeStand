@@ -1,0 +1,107 @@
+#root, body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fff9db, #ffe066)
+}
+
+.card {
+    background: white;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    text-align: center;
+    width: 800px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card h1 {
+    margin-bottom: 1rem;
+    color: #ff6f61;
+}
+
+.subtitle {
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    color: #868e96;
+    font-size: 0.95rem;
+}
+
+.profit {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.profit span {
+    font-weight: bold;
+    color: #868e96;
+    transition: transform 0.15s ease, color 0.2s ease;
+}
+
+.profit.positive span {
+    color: #2f9e44;
+}
+
+.profit.negative span {
+    color: #c92a2a;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.button {
+    background: linear-gradient(135deg, #ffd43b, #fab005);
+    border: none;
+    border-radius: 12px;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.status {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 80%;
+  }
+}
