@@ -14,7 +14,7 @@ export default function LemonadeStand() {
         
                 <p className={`profit 
                     ${profit < 0 ? "negative" : ""}
-                    ${profit >= 10 ? "positive" : ""}
+                    ${profit >= 1 ? "positive" : ""}
                 `}>
                     Profit: <span>${profit}</span>
                 </p>
