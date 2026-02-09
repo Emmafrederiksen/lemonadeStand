@@ -1,16 +1,53 @@
-# React + Vite
+# 🍋 Lemonade Stand – React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application built as part of a school assignment.
+This purpose of the app is to practice using the `useState` hook and handling user interactions in React. 
 
-Currently, two official plugins are available:
+## App functionality 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app tracks the current **profit** using React state.
+Sell a cup of lemonade increases the profit by $5.
+Buy more lemons decreases the profit by $2.
 
-## React Compiler
+The UI updates dynamically when the profit changes. 
+Profit is visually highlighted: 
+Green when positive
+Red when negative
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies used
 
-## Expanding the ESLint configuration
+- React 
+- Vite
+- Javascript
+- CSS 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Purpose of the assignment
+The goal of this assignment is to understand
+
+- How to use useState hook
+- How React updates the UI based on state changes
+- Basic component structure and styling in React
+
+
+## How to run the project
+
+Make sure you have **Node.js** installed.
+
+1. Clone the repository:
+
+git clone https://github.com/DIT_GITHUB_NAVN/lemonadeStand.git
+
+2. Navigate to the project folder:
+
+cd lemonadeStand
+
+3. Install dependencies: 
+
+npm install 
+
+4. Start the development server: 
+
+npm run dev
+
+Open the app in your browser using the URL shown in the terminal
+(usually http://localhost:5173).
