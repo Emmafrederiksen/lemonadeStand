@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import './LemonadeStand.css'
 import './App.css'
-import LemonadeStand from './lemonadeStand'
+import LemonadeStand from './LemonadeStand'
 
 function App() {
 
-  return (
+  return ( 
     
     <>
 

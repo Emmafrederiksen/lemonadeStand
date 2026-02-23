@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { sellLemonade, buyLemons } from "./redux/profitSlice";
 
 export default function LemonadeStand() {
 
-    const [profit, setProfit] = useState(0);
+    const profit = useSelector((state) => state.profit.value);
+    const dispatch = useDispatch();
 
     return (
         <div className="page">
@@ -20,11 +22,11 @@ export default function LemonadeStand() {
                 </p>
 
                 <div className="buttons">
-                    <button className="button" onClick={() => setProfit(p => p + 5)}>
+                    <button className="button" onClick={() => dispatch(sellLemonade())}>
                         Sell a cup of lemonade (+$5)
                     </button>
 
-                    <button className="button" onClick={() => setProfit(p => p - 2)}>
+                    <button className="button" onClick={() => dispatch(buyLemons())}>
                         Buy more lemons (-$2)
                     </button>
                 </div>   

@@ -1,13 +1,13 @@
 # 🍋 Lemonade Stand – React App
 
 This is a simple React application built as part of a school assignment.
-The purpose of the app is to practice using the `useState` hook and handling user interactions in React. 
+In **part 2**, the app has been upgraded to use **Redux Toolkit** for global state management instead of the 'useState' hook. 
 
 ---
 
 ## App functionality 
 
-The app tracks the current **profit** using React state.
+The app tracks the current **profit** using a global Redux store.
 Selling a cup of lemonade increases the profit by $5.
 Buying more lemons decreases the profit by $2.
 
@@ -16,12 +16,15 @@ Profit is visually highlighted:
 
 - Green when positive
 - Red when negative
+- Neutral when zero
 
 ---
 
 ## Technologies used
 
 - React 
+- Redux Toolkit
+- React Redux
 - Vite
 - Javascript
 - CSS 
@@ -32,9 +35,10 @@ Profit is visually highlighted:
 
 The goal of this assignment is to understand:
 
-- How to use useState hook
-- How React updates the UI based on state changes
-- Basic component structure and styling in React
+- The difference between local state and global state
+- How to use Redux Toolkit for state management
+- How to connect React components using useSelector and useDispatch
+- How React updates the UI based on global state changes
 
 ---
 
@@ -48,8 +52,9 @@ git clone https://github.com/DIT_GITHUB_NAVN/lemonadeStand.git
 ```
 
 2. Navigate to the project folder:
-
+```bash
 cd lemonadeStand
+```
 
 3. Install dependencies: 
 
