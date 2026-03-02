@@ -1,22 +1,14 @@
-.page {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card {
-    background: white;
+    background: var(--color-card);
     padding: 2.5rem 3rem;
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
     text-align: center;
-    width: 800px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-soft);
 }
 
 .card h1 {
     margin-bottom: 1rem;
-    color: #ff6f61;
+    color: var(--color-primary);
 }
 
 .subtitle {
@@ -53,14 +45,15 @@
 }
 
 .button {
-    background: linear-gradient(135deg, #ffd43b, #fab005);
+    background: var(--color-button-gradient);
     border: none;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
+    color: var(--color-text);
     padding: 0.7rem 1.2rem;
     font-size: 0.95rem;
     cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.12s ease;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-soft)
 }
 
 .button:hover {

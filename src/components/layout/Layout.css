@@ -1,0 +1,15 @@
+.layout {
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 var(--container-padding);
+}

@@ -1,0 +1,24 @@
+:root {
+  /* Layout */
+  --max-width: 1200px;
+  --container-padding: 2rem;
+
+  /* Colors */
+  --color-background: #fff9db;
+  --color-navbar: #ffd43b;
+  --color-card: #ffffff;
+  --color-text: #213547;
+  --color-primary: #ff6b6b;
+
+  /* Buttons */
+  --color-button: #fab005;
+  --color-button-hover: #f59f00;
+  --color-button-gradient: linear-gradient(135deg, #ffd43b, #fab005);
+
+  /* Radius */
+  --radius-lg: 20px;
+  --radius-md: 12px;
+
+  /* Shadow */
+  --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.08);
+}

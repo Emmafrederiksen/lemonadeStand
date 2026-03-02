@@ -1,0 +1,25 @@
+.navbar {
+  width: 100%;
+  background: var(--color-navbar);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem var(--container-padding);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
