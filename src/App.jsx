@@ -1,6 +1,6 @@
 import './LemonadeStand.css'
 import './App.css'
-import LemonadeStand from './LemonadeStand'
+import LemonadeStand from './lemonadeStand.jsx'
 
 function App() {
 
