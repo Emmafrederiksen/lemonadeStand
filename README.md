@@ -75,6 +75,7 @@ Global state is accessed using:
 
 ## Project Structure
 
+```
 src/
 │
 ├── assets/
@@ -114,7 +115,7 @@ src/
 │
 ├── App.jsx
 ├── main.jsx
-
+```
 ---
 
 ## Technologies used
