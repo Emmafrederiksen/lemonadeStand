@@ -2,9 +2,16 @@ import { useEffect, useState } from "react";
 import DrinkCard from "../components/drinkCard/DrinkCard";
 import './Shop.css';
 
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
+
+
 export default function Shop() {
 
     const [drinks, setDrinks] = useState([]);
+
+    const dispatch = useDispatch();
+
 
     useEffect (() => { 
         fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=lemon")
@@ -18,7 +25,7 @@ export default function Shop() {
     }, []);
 
     const handleAddToCart = (drink) => {
-        console.log("Added to cart:", drink);
+        dispatch(addToCart(drink));
     };
 
     return (

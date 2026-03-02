@@ -1,0 +1,103 @@
+.cart {
+  padding-top: 2rem;
+}
+
+.cart h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.empty-cart {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+/* GRID */
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* QUANTITY CONTROLS */
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.quantity-controls button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--color-button-gradient);
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.quantity-controls button:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.95);
+}
+
+.quantity-controls span {
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* REMOVE BUTTON */
+
+.remove-btn {
+  margin-top: 0.5rem;
+  background: transparent;
+  border: 1px solid #e03131;
+  color: #e03131;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #e03131;
+  color: white;
+}
+
+/* CHECKOUT SECTION */
+
+.checkout-summary {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--color-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.checkout-summary h2 {
+  margin-bottom: 1rem;
+}
+
+.checkout-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--color-button-gradient);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.checkout-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.95);
+}
